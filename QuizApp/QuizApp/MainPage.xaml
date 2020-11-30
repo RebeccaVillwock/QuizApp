@@ -5,11 +5,17 @@
 
     <StackLayout>
         <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
-            <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            <Label Text="Personality Quiz" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
         </Frame>
-        <Label Text="Question One" FontSize="Title" Padding="30,10,30,10"/>
+        <Label Text="Are You an Intorvert or Extrovert" FontSize="Title" Padding="30,10,30,10"/>
         
         
+        
+        <Label x:Name="QuestionNumber"
+            Text="Question One"/>
+        <Label x:Name="QuestionContent"
+            Text="Do you like being in crowded places"/>
+
 
         <Button Text="True"
                 TextColor="Purple"
