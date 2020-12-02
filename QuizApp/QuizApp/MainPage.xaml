@@ -18,12 +18,16 @@
 
 
         <Button Text="True"
+                x:Name="TrueButton"
                 TextColor="Purple"
-                HorizontalOptions="Center"/>
+                HorizontalOptions="Center"
+                Clicked="OnButtonClicked"/>
         
         <Button Text="False"
+                x:Name="FalseButton"
                 TextColor="DarkGreen"
-                HorizontalOptions="Center"/>
+                HorizontalOptions="Center"
+                Clicked="OnButtonClicked"/>
     </StackLayout>
 
 </ContentPage>
