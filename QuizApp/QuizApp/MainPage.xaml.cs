@@ -15,10 +15,20 @@ namespace QuizApp
             InitializeComponent();
         }
         int currentQuestion = 1;
+        int choiceTrue = 0;
+        int choiceFalse = 0;
         public void OnButtonClicked(object sender, EventArgs args)
         {
             
             currentQuestion++;
+            if (sender.Equals(TrueButton))
+            {
+                choiceTrue++;
+            }
+            else
+            {
+                choiceFalse++;
+            }
             
             changeQuestionNumber();
 
@@ -72,7 +82,15 @@ namespace QuizApp
             }
             else
             {
-                QuestionContent.Text = "";
+                if(choiceTrue > 3)
+                {
+                    QuestionContent.Text = "You are an Extrovert";
+                }
+                else
+                {
+                    QuestionContent.Text = "You are an Introvert";
+                }
+                
                 TrueButton.IsVisible = false;
                 FalseButton.IsVisible = false;
             }
